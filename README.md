@@ -3,6 +3,8 @@
 This project is designed to allow creation of monsters for the free and open source
 monster fighting RPG, Tuxemon.
 
+# Screenshot
+
 ![screenshot](monstermaker.png)
 
 # Requirements
