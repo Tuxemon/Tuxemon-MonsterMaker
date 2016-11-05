@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <% include ../partials/head %>
+
+  <body>
+
+    <% include ../partials/navbar %>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/banner-01.png" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Open source turn-based RPG.</h1>
+              <p>Completely open source monster fighting RPG. Capture and battle monsters against others!</p>
+              <p><a class="btn btn-lg btn-primary" href="download.html" role="button">Download</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/banner-02.png" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Online play.</h1>
+              <p>Battle friends over the internet and walk around with them in an open world.</p>
+              <p><a class="btn btn-lg btn-primary" href="#multiplayer" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/banner-03.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Mobile controller.</h1>
+              <p>Use your phone or tablet as a controller for a whole new playing experience.</p>
+              <p><a class="btn btn-lg btn-primary" href="https://www.youtube.com/watch?v=6LD_F7lqZ-s" role="button">Watch Video</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="images/python2.5.png" alt="Python Powered" style="width: 140px;">
+          <h2>Python Powered</h2>
+          <p>Tuxemon is written with Python 2.7. Python is a cross-platform, interpreted, interactive, object-oriented, extensible programming language provides an extraordinary combination of clarity and versatility.</p>
+          <p><a class="btn btn-default" href="https://www.python.org/" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="images/cc.large.png" alt="Creative Commons" style="width: 140px; ">
+          <h2>Creative Commons</h2>
+          <p>Share, copy, remix, tweak, edit and build upon our existing work with our Creative Commons <a href='http://creativecommons.org/licenses/by-sa/3.0/'>CC BY-SA License</a>. </p>
+          <p><a class="btn btn-default" href="http://creativecommons.org/licenses/by-sa/3.0/" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="images/gnu.png" alt="Open Source" style="width: 140px;">
+          <h2>Open Source</h2>
+          <p>Tuxemon is freely licensed software and all of the game's source code is available online to download for free. You can redistribute and modify the game in accordance with the <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GPL</a>.</p>
+          <p><a class="btn btn-default" href="http://www.gnu.org/licenses/gpl-2.0.html" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <a id="multiplayer"></a>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Multiplayer. <span class="text-muted">Battle your friends online in their world.</span></h2>
+          <p class="lead">Experience battling your friends online in an expansive open world. Walk around in the same world and work together co-operatively or against each other.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/featurette-01.png" alt="Multiplayer">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/featurette-02.png" alt="Fusions">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Fusions. <span class="text-muted">Create new, unique creatures.</span></h2>
+          <p class="lead">Combine monsters together to create interesting new creatures that inherit their parents' skills and physical attributes.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Controller. <span class="text-muted">Use your phone or tablet as a gamepad.</span></h2>
+          <p class="lead">Use your phone or tablet as a dynamic controller that changes when you enter combat. Connect over WiFi and experience the game in a new way! See how it works by <a href='https://www.youtube.com/watch?v=6LD_F7lqZ-s'>watching the video</a>.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/featurette-03.png" alt="Controller">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+  </body>
+
+<% include ../partials/footer %>
+<% include ../partials/bootstrap_footer %>
+
+</html>
