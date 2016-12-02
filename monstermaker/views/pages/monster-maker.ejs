@@ -20,120 +20,185 @@
       <hr class="featurette-divider">
 
         <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          
-          <div class="form-group">
-            <label for="monsterName">Monster Name</label>
-            <input aria-describedby="monsterNameHelp" class="form-control" id="monsterName" placeholder="Rockitten">
-            <small id="monsterNameHelp" class="form-text text-muted">Name of the monster.</small>
-          </div>
 
-          <div class="form-group">
-            <label for="monsterDescription">Monster Description</label>
-            <input aria-describedby="monsterDescriptionHelp" class="form-control" id="monsterDescription" placeholder="It uses its tiny rock ears for snuggling.">
-            <small id="monsterDescriptionHelp" class="form-text text-muted">The long description of the monster.</small>
-          </div>
-
-          <div class="form-group">
-            <label for="monsterCategory">Monster Category</label>
-            <input aria-describedby="monsterCategoryHelp" class="form-control" id="monsterCategory" placeholder="Tiny Cat">
-            <small id="monsterCategoryHelp" class="form-text text-muted">Short, one or two word description of the monster.</small>
-          </div>
-
-          <div class="form-group">
-            <label for="attackBase">Attack Base</label>
-            <input aria-describedby="attackBaseHelp" class="form-control" id="attackBase" placeholder="60">
-            <small id="attackBaseHelp" class="form-text text-muted">Monster's base attack power.</small>
-          </div>
-
-          <div class="form-group">
-            <label for="types">Types</label>
-            <select multiple class="form-control" id="types">
-              <option>Fire</option>
-              <option>Earth</option>
-              <option>Metal</option>
-              <option>Wood</option>
-              <option>Water</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-          </div>
-          <div class="form-group">
-            <label for="exampleSelect1">Example select</label>
-            <select class="form-control" id="exampleSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleSelect2">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleTextarea">Example textarea</label>
-            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputFile">File input</label>
-            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-            <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-          </div>
-          <fieldset class="form-group">
-            <legend>Radio buttons</legend>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                Option one is this and that&mdash;be sure to include why it's great
-              </label>
+        <div class="container">
+            <legend>Monster Details</legend>
+             
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="monsterName">Monster Name</label>
+                <input aria-describedby="monsterNameHelp" class="form-control" id="monsterName" placeholder="Rockitten">
+                <small id="monsterNameHelp" class="form-text text-muted">Name of the monster.</small>
+              </div>
             </div>
-            <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                Option two can be something else and selecting it will deselect option one
-              </label>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="monsterDescription">Monster Description</label>
+                <input aria-describedby="monsterDescriptionHelp" class="form-control" id="monsterDescription" placeholder="It uses its tiny rock ears for snuggling.">
+                <small id="monsterDescriptionHelp" class="form-text text-muted">The long description of the monster.</small>
+              </div>
             </div>
-            <div class="form-check disabled">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                Option three is disabled
-              </label>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="monsterCategory">Monster Category</label>
+                <input aria-describedby="monsterCategoryHelp" class="form-control" id="monsterCategory" placeholder="Tiny Cat">
+                <small id="monsterCategoryHelp" class="form-text text-muted">Short, one or two word description of the monster.</small>
+              </div>
             </div>
-          </fieldset>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input">
-              Check me out
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+        <div class="container">
+            <legend>Monster Stats</legend>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="hpBase">HP</label>
+                <div class="span12 centered-text">
+                    <input id="stat1" aria-describedby="hpBaseHelp" class="form-control" type="text" data-slider-ticks="[0, 25, 50, 75, 100]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["Terrible", "Bad", "Average", "Good", "Great"]'/>
+                </div>
+                <small id="hpBaseHelp" class="form-text text-muted">Monster's base HP value.</small>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="meleeBase">Melee</label>
+                <div class="span12 centered-text">
+                    <input id="stat2" aria-describedby="hpBaseHelp" class="form-control" type="text" data-slider-ticks="[0, 25, 50, 75, 100]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["Terrible", "Bad", "Average", "Good", "Great"]'/>
+                </div>
+                <small id="meleeBaseHelp" class="form-text text-muted">Monster's base melee attack power.</small>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="armorBase">Armor</label>
+                <div class="span12 centered-text">
+                    <input id="stat3" aria-describedby="hpBaseHelp" class="form-control" type="text" data-slider-ticks="[0, 25, 50, 75, 100]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["Terrible", "Bad", "Average", "Good", "Great"]'/>
+                </div>
+                <small id="armorBaseHelp" class="form-text text-muted">Monster's base defense against melee.</small>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="rangedBase">Ranged</label>
+                <div class="span12 centered-text">
+                    <input id="stat4" aria-describedby="hpBaseHelp" class="form-control" type="text" data-slider-ticks="[0, 25, 50, 75, 100]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["Terrible", "Bad", "Average", "Good", "Great"]'/>
+                </div>
+                <small id="rangedBaseHelp" class="form-text text-muted">Monster's base ranged attack power.</small>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="dodgeBase">Dodge</label>
+                <div class="span12 centered-text">
+                    <input id="stat5" aria-describedby="hpBaseHelp" class="form-control" type="text" data-slider-ticks="[0, 25, 50, 75, 100]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["Terrible", "Bad", "Average", "Good", "Great"]'/>
+                </div>
+                <small id="dodgeBaseHelp" class="form-text text-muted">Monster's base defense against ranged.</small>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="speedBase">Speed</label>
+                <div class="span12 centered-text">
+                    <input id="stat6" aria-describedby="hpBaseHelp" class="form-control" type="text" data-slider-ticks="[0, 25, 50, 75, 100]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["Terrible", "Bad", "Average", "Good", "Great"]'/>
+                </div>
+                <small id="speedBaseHelp" class="form-text text-muted">Monster's base speed to determine turn order.</small>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="weight">Weight</label>
+                <div class="span12 centered-text">
+                    <input id="stat7" aria-describedby="weightHelp" class="form-control" type="text" data-slider-ticks="[0, 25, 50, 75, 100]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["Terrible", "Bad", "Average", "Good", "Great"]'/>
+                </div>
+                <small id="weightHelp" class="form-text text-muted">Monster's weight in pounds.</small>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                  <label for="morphProgress">Morph Progress</label>
+                  <select class="form-control" id="morphProgress">
+                    <option>First Stage</option>
+                    <option>Second Stage</option>
+                    <option>Final Stage</option>
+                  </select>
+                  <small id="morphProgressHelp" class="form-text text-muted">Stage in the monster's transmutation.</small>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                  <label for="types">Types</label>
+                  <select multiple class="form-control" id="types">
+                    <option>Fire</option>
+                    <option>Earth</option>
+                    <option>Metal</option>
+                    <option>Wood</option>
+                    <option>Water</option>
+                  </select>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- TODO: Add system of adding moves
+        <div class="container">
+            <legend>Monster Moveset</legend>
+        </div>
+        -->
+
+        <div class="container">
+            <legend>Monster Sprites</legend>
+
+            <div class="col-md-3">
+                <div class="form-group">
+                  <label for="exampleInputFile">Front Sprite</label>
+                  <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                  <small id="fileHelp" class="form-text text-muted">Front monster sprite used in battle.</small>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-group">
+                  <label for="exampleInputFile">Back Sprite</label>
+                  <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                  <small id="fileHelp" class="form-text text-muted">Back monster sprite used in battle.</small>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-group">
+                  <label for="exampleInputFile">Face Sprite 1</label>
+                  <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                  <small id="fileHelp" class="form-text text-muted">First menu sprite animation frame.</small>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-group">
+                  <label for="exampleInputFile">Face Sprite 2</label>
+                  <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                  <small id="fileHelp" class="form-text text-muted">Second menu sprite animation frame.</small>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+
         </form>
-
-      <a id="multiplayer"></a>
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Download <span class="text-muted">Tuxemon.</span></h2>
-	  <p class="lead">Note that <b>Tuxemon is currently alpha-level software.</b> Almost all of the game's content is still yet to be created, but much of the backend systems such as the event engine, combat system, dialog, and map systems have been implemented in some way.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/featurette-02.png" alt="Multiplayer">
-        </div>
-      </div>
 
       <hr class="featurette-divider">
 

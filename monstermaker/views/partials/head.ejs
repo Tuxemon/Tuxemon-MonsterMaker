@@ -10,6 +10,9 @@
     <!-- Bootstrap core CSS -->
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Bootstrap slider CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/css/bootstrap-slider.min.css" rel="stylesheet">
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="javascripts/ie10-viewport-bug-workaround.js"></script>
 
@@ -32,4 +35,117 @@
       ga('send', 'pageview');
     </script>
 
+    <!-- Custom styles for sliders -->
+    <style type='text/css'>
+    	/* Space out content a bit */
+		body {
+		  padding-top: 20px;
+		  padding-bottom: 20px;
+		}
 
+		h1 small {
+			font-size: 51%;
+		}
+
+		/* Everything but the jumbotron gets side spacing for mobile first views */
+		.header,
+		.marketing,
+		.footer {
+		  padding-left: 15px;
+		  padding-right: 15px;
+		}
+
+		/* Custom page header */
+		.header {
+		  border-bottom: 1px solid #e5e5e5;
+		}
+		/* Make the masthead heading the same height as the navigation */
+		.header h3 {
+		  margin-top: 0;
+		  margin-bottom: 0;
+		  line-height: 40px;
+		  padding-bottom: 19px;
+		}
+
+		/* Custom page footer */
+		.footer {
+		  padding-top: 19px;
+		  color: #777;
+		  border-top: 1px solid #e5e5e5;
+		}
+
+		/* Customize container */
+		.container {
+			min-width: 640px;
+		}
+		@media (min-width: 768px) {
+		  .container {
+		    max-width: 1000px;
+		  }
+		}
+		.container-narrow > hr {
+		  margin: 30px 0;
+		}
+
+		/* Main marketing message and sign up button */
+		.title {
+		  text-align: center;
+		  border-bottom: 1px solid #e5e5e5;
+		}
+
+		/* Responsive: Portrait tablets and up */
+		@media screen and (min-width: 768px) {
+		  /* Remove the padding we set earlier */
+		  .header,
+		  .footer {
+		    padding-left: 0;
+		    padding-right: 0;
+		  }
+		  /* Space out the masthead */
+		  .header {
+		    margin-bottom: 30px;
+		  }
+		  /* Remove the bottom border on the jumbotron for visual effect */
+		  .title {
+		    border-bottom: 0;
+		  }
+		}
+
+		.well {
+			background-color: #E0E0E0;
+		}
+
+		.slider-example {
+			padding: 10px 0;
+			margin: 35px 0;
+		}
+
+		#destroyEx5Slider, #ex6CurrentSliderValLabel, #ex7-enabled {
+			margin-left: 45px;
+		}
+
+		#ex6SliderVal {
+			color: green;
+		}
+
+		#slider12a .slider-track-high, #slider12c .slider-track-high {
+			background: green;
+		}
+
+		#slider12b .slider-track-low, #slider12c .slider-track-low {
+			background: red;
+		}
+
+		#slider12c .slider-selection {
+			background: yellow;
+		}
+
+		#slider22 .slider-selection {
+			background: #2196f3;
+		}
+
+		#slider22 .slider-rangeHighlight {
+        	background: #f70616;
+        }
+
+    </style>
