@@ -1,4 +1,5 @@
 var express = require('express');
+var multer = require('multer');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -54,5 +55,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
+// handle where file uploads get stored
+app.use(multer({dest:'./uploads/'}).array('multiInputFileName'));
 
 module.exports = app;
