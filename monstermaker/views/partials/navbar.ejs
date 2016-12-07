@@ -1,55 +1,63 @@
-   <div class="navbar-wrapper">
-      <div class="container">
+<style type='text/css'>
+    body,html {
+      height: 100%;
+    }
+    
+    body {
+      padding-top: 50px;
+    }
+    
+    .wide {
+      width:100%;
+      height:100%;
+      height:calc(30% - 1px);
+      background-image:url('/images/tux_concept_zpsymbxddn4.JPG');
+      background-size:cover;
+    }
+    
+    .wide img {
+      width:100%;
+    }
+    
+    .logo {
+      color:#111;
+      font-weight:800;
+      font-size:24pt;
+      padding:25px;
+      text-align:center;
+    }
+    
+    .line {
+      padding-top:20px;
+      white-space:no-wrap;
+      overflow:hidden;
+      text-align:center;
+    }
+</style>
 
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/">Tuxemon</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li <% if (page_name === 'index') { %> class="active"<% } %>><a href="/">Home</a></li>
-                <li <% if (page_name === 'about') { %> class="active"<% } %>><a href="about.html">About</a></li>
-                <li><a href="mailto:info@tuxemon.org">Contact</a></li>
-                <li><a href="https://github.com/Tuxemon/Tuxemon">Git</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="http://forum.tuxemon.org">Forums</a></li>
-                    <li><a href="https://tree.taiga.io/project/tuxemon-tuxemon/">Kanban</a></li>
-                    <li><a href="http://www.reddit.com/r/tuxemon">Subreddit</a></li>
-                    <li <% if (page_name === 'irc') { %> class="active"<% } %>><a href="irc.html">IRC</a></li>
-                  </ul>
-                </li>
-                <li <% if (page_name === 'download') { %> class="active"<% } %>><a href="download.html">Download</a></li>
-                <li <% if (page_name === 'donate') { %> class="active"<% } %>><a href="donate.html">Donations</a></li>
-                <li <% if (page_name === 'music') { %> class="active"<% } %>><a href="music.html">Music</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="https://github.com/Tuxemon/Tuxemon/wiki">Wiki</a></li>
-                    <li><a href="http://docs.tuxemon.org">Code Reference</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Installation Instructions</li>
-                    <li <% if (page_name === 'windows') { %> class="active"<% } %>><a href="windows-install.html">Windows</a></li>
-                    <li <% if (page_name === 'linux') { %> class="active"<% } %>><a href="linux-install.html">Linux</a></li>
-                    <li <% if (page_name === 'mac') { %> class="active"<% } %>><a href="mac-install.html">Mac OSX</a></li>
-                    <li <% if (page_name === 'android') { %> class="active"<% } %>><a href="android-install.html">Android</a></li>
-                    <li <% if (page_name === 'gcw') { %> class="active"<% } %>><a href="gcwzero-install.html">GCW-Zero</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Tuxemon</a>
     </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="https://www.tuxemon.org">Back</a></li>
+        <li class="active"><a href="#">Monster Maker</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
 
-
-
+<div class="wide">
+  	<div class="col-xs-5 line"><hr></div>
+    <div class="col-xs-2 logo">Monster Maker</div>
+    <div class="col-xs-5 line"><hr></div>
+</div>

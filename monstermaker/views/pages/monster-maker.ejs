@@ -15,7 +15,7 @@
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
+      <hr class="divider">
 
         <% if (alert_found) { %>
         <div class="alert alert-<%= alert_type %>">
@@ -27,7 +27,7 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label for="monsterJsonTextarea">Monster JSON</label>
-                <textarea class="form-control" id="monsterJsonTextarea" rows="6"><%= JSON.stringify(generatedData['monster'], null, 2) %></textarea>
+                <textarea class="form-control" id="monsterJsonTextarea" rows="16"><%= JSON.stringify(generatedData['monster'], null, 2) %></textarea>
                 <small id="monsterJsonTextareaHelp" class="form-text text-muted">Copy this into a file in <code>resources/db/monster</code>.</small>
               </div>
             </div>
@@ -35,7 +35,7 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label for="exampleTextarea">Locale JSON</label>
-                <textarea class="form-control" id="exampleTextarea" rows="6"><%= JSON.stringify(generatedData['locale'], null, 2) %></textarea>
+                <textarea class="form-control" id="exampleTextarea" rows="16"><%= JSON.stringify(generatedData['locale'], null, 2) %></textarea>
                 <small id="localeJsonTextareaHelp" class="form-text text-muted">Copy these lines (excluding curly braces) into <code>resources/db/locale/en_US.json</code>.</small>
               </div>
             </div>
