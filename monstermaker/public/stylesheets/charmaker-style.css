@@ -1,0 +1,37 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+h1 {
+	font-size: 180%;
+	font-weight: bold;
+	line-height: 150%;
+}
+
+h2 {
+	font-size: 150%;
+	line-height: 150%;
+}
+
+h3 {
+	font-size: 120%;
+	line-height: 150%;
+}
+
+h4 {
+	line-height: 150%;
+}
+
+img{
+	border: solid 1px #e5e5e5;
+	width: 20px; /*better: bigger images.*/
+	padding-left: 3px; /*adjust, so it gets square sized*/
+	padding-right: 3px;
+}
+
+canvas {
+	border: solid 1px #e5e5e5;
+}
