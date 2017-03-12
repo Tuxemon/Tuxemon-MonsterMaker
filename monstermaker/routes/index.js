@@ -18,6 +18,8 @@ router.get('/', function(req, res, next) {
               alert_message: alert_message
           });
 });
+/*GET charmaker */
+router.get('/characters', function(req, res, next) { res.render('pages/characters') }
 
 // Handle monster submitions
 var uploadFields = [{name: "frontSprite"}, {name: "backSprite"}, {name: "faceSprite1"}, {name: "faceSprite2"}];
